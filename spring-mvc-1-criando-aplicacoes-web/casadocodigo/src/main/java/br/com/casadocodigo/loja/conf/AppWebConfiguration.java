@@ -9,15 +9,15 @@ import br.com.casadocodigo.loja.controllers.HomeController;
 import br.com.casadocodigo.loja.dao.ProdutoDAO;
 
 @EnableWebMvc
-@ComponentScan(basePackageClasses={HomeController.class,ProdutoDAO.class})
+@ComponentScan(basePackageClasses = { HomeController.class, ProdutoDAO.class })
 public class AppWebConfiguration {
 
 	@Bean
-	public InternalResourceViewResolver internalResourceViewResolver(){
+	public InternalResourceViewResolver internalResourceViewResolver() {
 		InternalResourceViewResolver resolver = new InternalResourceViewResolver();
 		resolver.setPrefix("/WEB-INF/views/");
 		resolver.setSuffix(".jsp");
 		return resolver;
 	}
-	
+
 }
