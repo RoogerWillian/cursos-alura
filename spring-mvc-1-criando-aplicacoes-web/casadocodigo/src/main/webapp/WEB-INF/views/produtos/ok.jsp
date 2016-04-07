@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Cadastro produtos</title>
+<title>Livros de Java, Ruby , iPhone, Android e muito mais!</title>
 </head>
 <body>
 	<h1>Produto cadastrado com sucesso!</h1>

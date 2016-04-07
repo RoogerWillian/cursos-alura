@@ -1,5 +1,7 @@
 package br.com.casadocodigo.loja.dao;
 
+import java.util.List;
+
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
@@ -17,5 +19,9 @@ public class ProdutoDAO {
 	
 	public void gravar(Produto produto){
 		manager.persist(produto);
+	}
+
+	public List<Produto> listar() {
+		return manager.createQuery("from Produto", Produto.class).getResultList();
 	}
 }
