@@ -8,5 +8,7 @@
 </head>
 <body>
 	<h1>Home</h1>
+	<a href="produtos">Listagem de produtos</a><br/>
+	<a href="produtos/novo">Cadastro Produtos</a>
 </body>
 </html>

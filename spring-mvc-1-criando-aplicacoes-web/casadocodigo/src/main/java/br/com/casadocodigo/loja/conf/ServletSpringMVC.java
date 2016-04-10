@@ -9,12 +9,12 @@ public class ServletSpringMVC extends AbstractAnnotationConfigDispatcherServletI
 
 	@Override
 	protected Class<?>[] getRootConfigClasses() {
-		return null;
+		return new Class<?>[] { SecurityConfiguration.class, AppWebConfiguration.class, JpaConfiguration.class };
 	}
 
 	@Override
 	protected Class<?>[] getServletConfigClasses() {
-		return new Class<?>[] { AppWebConfiguration.class, JpaConfiguration.class };
+		return new Class<?>[] {};
 	}
 
 	@Override
@@ -26,7 +26,7 @@ public class ServletSpringMVC extends AbstractAnnotationConfigDispatcherServletI
 	protected Filter[] getServletFilters() {
 		CharacterEncodingFilter encodingFilter = new CharacterEncodingFilter();
 		encodingFilter.setEncoding("UTF-8");
-		
+
 		return new Filter[] { encodingFilter };
 	}
 
