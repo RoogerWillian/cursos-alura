@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Agenda</string>
+    <string name="title_activity_formulario">Formulário</string>
+    <string name="salvar_aluno">Salvar</string>
+</resources>
