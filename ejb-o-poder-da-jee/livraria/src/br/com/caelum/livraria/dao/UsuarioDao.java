@@ -1,14 +1,25 @@
 package br.com.caelum.livraria.dao;
 
+import javax.ejb.Stateless;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.persistence.TypedQuery;
+
 import br.com.caelum.livraria.modelo.Usuario;
 
-
+@Stateless
 public class UsuarioDao {
 
-	private Banco banco = new Banco();
+	@PersistenceContext
+	private EntityManager manager;
 
 	public Usuario buscaPeloLogin(String login) {
-		return this.banco.buscaPeloNome(login);
+
+		TypedQuery<Usuario> query = manager.createQuery("select u from Usuario u where u.login = :login",
+				Usuario.class);
+		query.setParameter("login", login);
+
+		return query.getSingleResult();
 	}
-	
+
 }
