@@ -15,9 +15,9 @@ public class LivrariaWS {
 
 	@Inject
 	private LivroDao dao;
-
-	@WebResult(name = "livros")
-	public List<Livro> getPeloTitulo(@WebParam(name = "titulo") String titulo) {
+	
+	@WebResult(name="livro")
+	public List<Livro> getPeloTitulo(@WebParam(name="titulo")String titulo){
 		return dao.getPeloTitulo(titulo);
 	}
 }
