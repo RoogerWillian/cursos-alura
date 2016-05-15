@@ -13,7 +13,13 @@ import br.com.caelum.livraria.modelo.Usuario;
 public class LoginBean {
 	
 	private Usuario usuario = new Usuario();
+<<<<<<< HEAD
 	private UsuarioDao dao = new UsuarioDao();
+=======
+	
+	@Inject
+	private UsuarioDao dao;
+>>>>>>> d0bfd60a809d478fb71d0d390c928b443c2f04e8
 	
 	@Inject
 	UsuarioLogadoBean usuarioLogado;
