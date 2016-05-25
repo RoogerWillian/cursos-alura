@@ -8,6 +8,7 @@ import br.com.caelum.livraria.modelo.Usuario;
 
 public class UsuarioDao {
 
+	@SuppressWarnings("unused")
 	public boolean existe(Usuario usuario) {
 		
 		EntityManager em = new JPAUtil().getEntityManager();
