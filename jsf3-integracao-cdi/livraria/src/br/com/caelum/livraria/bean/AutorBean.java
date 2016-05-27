@@ -7,9 +7,9 @@ import javax.faces.view.ViewScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
 
+import br.com.caelum.livraria.annotation.Transacional;
 import br.com.caelum.livraria.dao.AutorDao;
 import br.com.caelum.livraria.modelo.Autor;
-import br.com.caelum.livraria.tx.Transacional;
 
 @SuppressWarnings("serial")
 @Named
