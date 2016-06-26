@@ -16,4 +16,9 @@ public class Curso {
 	public String getNome() {
 		return nome;
 	}
+
+	@Override
+	public String toString() {
+		return "Curso [nome=" + nome + ", alunos=" + alunos + "]";
+	}
 }
