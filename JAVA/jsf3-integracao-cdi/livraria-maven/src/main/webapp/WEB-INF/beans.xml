@@ -1,0 +1,7 @@
+<!-- WebContent/WEB-INF/beans.xml -->
+<beans>
+ 	<interceptors>
+ 		<class>br.com.caelum.livraria.interceptor.GerenciadorTransacao</class>
+ 		<class>br.com.caelum.livraria.interceptor.TempoDeExecucaoInterceptor</class>
+ 	</interceptors>
+</beans>
