@@ -89,6 +89,9 @@ return [
 		'attribute-name' => [
 			'rule-name' => 'custom-message',
 		],
+        'nome' => [
+            'required' => 'O :attribute não pode ser vazio'
+        ]
 	],
 
 	/*
